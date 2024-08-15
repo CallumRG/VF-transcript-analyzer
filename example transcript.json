@@ -1,0 +1,2161 @@
+[
+  {
+    "turnID": "66a1fa907fe2c0d9dcf5f7c1",
+    "type": "request",
+    "payload": {
+      "type": "launch"
+    },
+    "startTime": "2024-07-25T07:11:12.509Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1fa907fe2c0d9dcf5f7c1",
+    "type": "flow",
+    "payload": {
+      "time": 1721891472505,
+      "type": "flow",
+      "payload": {
+        "diagramID": "64386e21bb106b044ea34b78"
+      }
+    },
+    "startTime": "2024-07-25T07:11:12.509Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa907fe2c0d9dcf5f7c1",
+    "type": "block",
+    "payload": {
+      "time": 1721891472508,
+      "type": "block",
+      "payload": {
+        "blockID": "start00000000000000000000"
+      }
+    },
+    "startTime": "2024-07-25T07:11:12.509Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa907fe2c0d9dcf5f7c1",
+    "type": "debug",
+    "payload": {
+      "time": 1721891472508,
+      "type": "debug",
+      "payload": {
+        "type": "start",
+        "message": "beginning flow"
+      }
+    },
+    "startTime": "2024-07-25T07:11:12.509Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa907fe2c0d9dcf5f7c1",
+    "type": "block",
+    "payload": {
+      "time": 1721891472508,
+      "type": "block",
+      "payload": {
+        "blockID": "6639257dfc12028be7b7035a"
+      }
+    },
+    "startTime": "2024-07-25T07:11:12.509Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa907fe2c0d9dcf5f7c1",
+    "type": "text",
+    "payload": {
+      "time": 1721891472508,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "cs4l05te",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Hi! Welcome to lastbot, a voiceflow powered Last.fm chatbot!"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Hi! Welcome to lastbot, a voiceflow powered Last.fm chatbot!",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:11:12.509Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa907fe2c0d9dcf5f7c1",
+    "type": "block",
+    "payload": {
+      "time": 1721891472508,
+      "type": "block",
+      "payload": {
+        "blockID": "663925bbfc12028be7b70363"
+      }
+    },
+    "startTime": "2024-07-25T07:11:12.509Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa907fe2c0d9dcf5f7c1",
+    "type": "text",
+    "payload": {
+      "time": 1721891472508,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "cs4m05wr",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "What is your last.fm username?"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "What is your last.fm username?",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:11:12.509Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa907fe2c0d9dcf5f7c1",
+    "type": "block",
+    "payload": {
+      "time": 1721891472508,
+      "type": "block",
+      "payload": {
+        "blockID": "663925fbfc12028be7b70368"
+      }
+    },
+    "startTime": "2024-07-25T07:11:12.509Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa98e9a554bdb76e9363",
+    "type": "request",
+    "payload": {
+      "type": "intent",
+      "payload": {
+        "query": "SHUT UP",
+        "intent": {
+          "name": "None"
+        },
+        "entities": [],
+        "confidence": 0.988
+      }
+    },
+    "startTime": "2024-07-25T07:11:20.174Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1fa98e9a554bdb76e9363",
+    "type": "debug",
+    "payload": {
+      "time": 1721891480172,
+      "type": "debug",
+      "payload": {
+        "type": "intent",
+        "message": "matched intent **None** - confidence interval _98.80%_"
+      }
+    },
+    "startTime": "2024-07-25T07:11:20.174Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa98e9a554bdb76e9363",
+    "type": "block",
+    "payload": {
+      "time": 1721891480173,
+      "type": "block",
+      "payload": {
+        "blockID": "663925fbfc12028be7b70368"
+      }
+    },
+    "startTime": "2024-07-25T07:11:20.174Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa98e9a554bdb76e9363",
+    "type": "path",
+    "payload": {
+      "time": 1721891480174,
+      "type": "path",
+      "payload": {
+        "path": "capture"
+      }
+    },
+    "startTime": "2024-07-25T07:11:20.174Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa98e9a554bdb76e9363",
+    "type": "block",
+    "payload": {
+      "time": 1721891480174,
+      "type": "block",
+      "payload": {
+        "blockID": "663a41a5cb7d19b4f8325565"
+      }
+    },
+    "startTime": "2024-07-25T07:11:20.174Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa98e9a554bdb76e9363",
+    "type": "choice",
+    "payload": {
+      "time": 1721891480174,
+      "type": "choice",
+      "payload": {
+        "buttons": [
+          {
+            "name": "Top Albums",
+            "request": {
+              "type": "intent",
+              "payload": {
+                "query": "Top Albums",
+                "label": "Top Albums",
+                "intent": {
+                  "name": "top albums"
+                },
+                "actions": [],
+                "entities": []
+              }
+            }
+          },
+          {
+            "name": "Top Songs",
+            "request": {
+              "type": "intent",
+              "payload": {
+                "query": "Top Songs",
+                "label": "Top Songs",
+                "intent": {
+                  "name": "top songs"
+                },
+                "actions": [],
+                "entities": []
+              }
+            }
+          }
+        ]
+      }
+    },
+    "startTime": "2024-07-25T07:11:20.174Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e9369",
+    "type": "request",
+    "payload": {
+      "type": "intent",
+      "payload": {
+        "query": "Top Albums",
+        "label": "Top Albums",
+        "intent": {
+          "name": "top albums"
+        },
+        "actions": [],
+        "entities": []
+      },
+      "ELICIT": false
+    },
+    "startTime": "2024-07-25T07:11:22.367Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e9369",
+    "type": "debug",
+    "payload": {
+      "time": 1721891482360,
+      "type": "debug",
+      "payload": {
+        "type": "intent",
+        "message": "matched intent **top albums** - confidence interval _100.00%_"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.367Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e9369",
+    "type": "block",
+    "payload": {
+      "time": 1721891482367,
+      "type": "block",
+      "payload": {
+        "blockID": "663a41a5cb7d19b4f8325565"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.367Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e9369",
+    "type": "path",
+    "payload": {
+      "time": 1721891482367,
+      "type": "path",
+      "payload": {
+        "path": "choice:1"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.367Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e9369",
+    "type": "goto",
+    "payload": {
+      "time": 1721891482367,
+      "type": "goto",
+      "payload": {
+        "request": {
+          "type": "intent",
+          "payload": {
+            "query": "",
+            "intent": {
+              "name": "top albums"
+            },
+            "entities": []
+          },
+          "diagramID": "663a402c0e02a455169286a0"
+        }
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.367Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "request",
+    "payload": {
+      "type": "intent",
+      "payload": {
+        "query": "",
+        "intent": {
+          "name": "top albums"
+        },
+        "entities": []
+      },
+      "diagramID": "663a402c0e02a455169286a0",
+      "ELICIT": false
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "debug",
+    "payload": {
+      "time": 1721891482391,
+      "type": "debug",
+      "payload": {
+        "type": "intent",
+        "message": "matched intent **top albums** - confidence interval _100.00%_"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "path",
+    "payload": {
+      "time": 1721891482393,
+      "type": "path",
+      "payload": {
+        "path": "jump"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "flow",
+    "payload": {
+      "time": 1721891482393,
+      "type": "flow",
+      "payload": {
+        "diagramID": "663a402c0e02a455169286a0"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "debug",
+    "payload": {
+      "time": 1721891482393,
+      "type": "debug",
+      "payload": {
+        "type": "command",
+        "message": "matched command **jump** - jumping to node"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "block",
+    "payload": {
+      "time": 1721891482395,
+      "type": "block",
+      "payload": {
+        "blockID": "663a402c5aa49c0006fb2ba9"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "debug",
+    "payload": {
+      "time": 1721891482395,
+      "type": "debug",
+      "payload": {
+        "message": "could not handle step - redirecting to the next step"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "block",
+    "payload": {
+      "time": 1721891482395,
+      "type": "block",
+      "payload": {
+        "blockID": "663a4539cb7d19b4f832573e"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "flow",
+    "payload": {
+      "time": 1721891482395,
+      "type": "flow",
+      "payload": {
+        "diagramID": "663a44c60e02a455169286a3"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "debug",
+    "payload": {
+      "time": 1721891482395,
+      "type": "debug",
+      "payload": {
+        "type": "flow",
+        "message": "entering flow `663a44c60e02a455169286a3`"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "block",
+    "payload": {
+      "time": 1721891482397,
+      "type": "block",
+      "payload": {
+        "blockID": "663a44c65aa49c0006fb2bd6"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "debug",
+    "payload": {
+      "time": 1721891482397,
+      "type": "debug",
+      "payload": {
+        "type": "start",
+        "message": "beginning flow"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "block",
+    "payload": {
+      "time": 1721891482397,
+      "type": "block",
+      "payload": {
+        "blockID": "663a44d7cb7d19b4f83256c8"
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9ae9a554bdb76e936a",
+    "type": "choice",
+    "payload": {
+      "time": 1721891482397,
+      "type": "choice",
+      "payload": {
+        "buttons": [
+          {
+            "name": "7 Days",
+            "request": {
+              "type": "path-xj29z3cnr",
+              "payload": {
+                "label": "7 Days",
+                "actions": []
+              }
+            }
+          },
+          {
+            "name": "1 Month",
+            "request": {
+              "type": "path-af2bu3ci6",
+              "payload": {
+                "label": "1 Month",
+                "actions": []
+              }
+            }
+          },
+          {
+            "name": "3 Month",
+            "request": {
+              "type": "path-tp2d73cln",
+              "payload": {
+                "label": "3 Month",
+                "actions": []
+              }
+            }
+          },
+          {
+            "name": "6 Month",
+            "request": {
+              "type": "path-172dk3c9l",
+              "payload": {
+                "label": "6 Month",
+                "actions": []
+              }
+            }
+          },
+          {
+            "name": "12 Month",
+            "request": {
+              "type": "path-qg2dw3cht",
+              "payload": {
+                "label": "12 Month",
+                "actions": []
+              }
+            }
+          },
+          {
+            "name": "Overall",
+            "request": {
+              "type": "path-gh2e93c2b",
+              "payload": {
+                "label": "Overall",
+                "actions": []
+              }
+            }
+          }
+        ]
+      }
+    },
+    "startTime": "2024-07-25T07:11:22.398Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "request",
+    "payload": {
+      "type": "path-tp2d73cln",
+      "payload": {
+        "label": "3 Month",
+        "actions": []
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "block",
+    "payload": {
+      "time": 1721891485438,
+      "type": "block",
+      "payload": {
+        "blockID": "663a44d7cb7d19b4f83256c8"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "path",
+    "payload": {
+      "time": 1721891485438,
+      "type": "path",
+      "payload": {
+        "path": "choice:3"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "block",
+    "payload": {
+      "time": 1721891485438,
+      "type": "block",
+      "payload": {
+        "blockID": "663a44d7cb7d19b4f83256da"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "debug",
+    "payload": {
+      "time": 1721891485445,
+      "type": "debug",
+      "payload": {
+        "type": "code",
+        "message": "evaluating code - changes:\n`{period}`: `\"overall\"` => `\"3month\"`"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "block",
+    "payload": {
+      "time": 1721891485445,
+      "type": "block",
+      "payload": {
+        "blockID": "663a44d7cb7d19b4f83256d1"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "text",
+    "payload": {
+      "time": 1721891485445,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "c54v0ilf",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Terrific! The period is now set to "
+                },
+                {
+                  "text": "3month"
+                },
+                {
+                  "text": "!"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Terrific! The period is now set to 3month!",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "flow",
+    "payload": {
+      "time": 1721891485446,
+      "type": "flow",
+      "payload": {
+        "diagramID": "663a402c0e02a455169286a0"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "block",
+    "payload": {
+      "time": 1721891485448,
+      "type": "block",
+      "payload": {
+        "blockID": "663a42bbcb7d19b4f83255aa"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "debug",
+    "payload": {
+      "time": 1721891485771,
+      "type": "debug",
+      "payload": {
+        "message": "Error: HTTP error! status: 404"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "block",
+    "payload": {
+      "time": 1721891485772,
+      "type": "block",
+      "payload": {
+        "blockID": "663a42bbcb7d19b4f83255a7"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "text",
+    "payload": {
+      "time": 1721891485772,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "l84x0iba",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Sorry! No results seem to have been found for that username."
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Sorry! No results seem to have been found for that username.",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "block",
+    "payload": {
+      "time": 1721891485772,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34738a24039386ddcb50"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "text",
+    "payload": {
+      "time": 1721891485772,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "l84y0i4l",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Do you want enter a new username and make another selection?"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Do you want enter a new username and make another selection?",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fa9de9a554bdb76e936f",
+    "type": "block",
+    "payload": {
+      "time": 1721891485772,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34688a24039386ddcb4a"
+      }
+    },
+    "startTime": "2024-07-25T07:11:25.773Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa6e9a554bdb76e938e",
+    "type": "request",
+    "payload": {
+      "type": "intent",
+      "payload": {
+        "query": "I'm upset",
+        "intent": {
+          "name": "None"
+        },
+        "entities": [],
+        "confidence": 0.875
+      }
+    },
+    "startTime": "2024-07-25T07:11:34.253Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1faa6e9a554bdb76e938e",
+    "type": "debug",
+    "payload": {
+      "time": 1721891493244,
+      "type": "debug",
+      "payload": {
+        "type": "intent",
+        "message": "matched intent **None** - confidence interval _87.50%_"
+      }
+    },
+    "startTime": "2024-07-25T07:11:34.253Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa6e9a554bdb76e938e",
+    "type": "block",
+    "payload": {
+      "time": 1721891493247,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34688a24039386ddcb4a"
+      }
+    },
+    "startTime": "2024-07-25T07:11:34.253Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa6e9a554bdb76e938e",
+    "type": "debug",
+    "payload": {
+      "time": 1721891494249,
+      "type": "debug",
+      "payload": {
+        "message": "__KB Fallback__\n    <br /> Model: `gpt-3.5-turbo`\n    <br /> Token Multiplier: `0.6x`\n    <br /> Token Consumption: `{total: 877, query: 874, answer: 4}`\n    <br /> Post-Multiplier Token Consumption: `{total: 526, query: 524, answer: 2}`"
+      }
+    },
+    "startTime": "2024-07-25T07:11:34.253Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa6e9a554bdb76e938e",
+    "type": "path",
+    "payload": {
+      "time": 1721891494249,
+      "type": "path",
+      "payload": {
+        "path": "reprompt"
+      }
+    },
+    "startTime": "2024-07-25T07:11:34.253Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa6e9a554bdb76e938e",
+    "type": "text",
+    "payload": {
+      "time": 1721891494249,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "4p2n1o0ds4",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Sorry, I didn’t get that. Please try again."
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Sorry, I didn’t get that. Please try again.",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:11:34.253Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa87fe2c0d9dcf5f7d8",
+    "type": "request",
+    "payload": {
+      "type": "intent",
+      "payload": {
+        "query": "end chat",
+        "intent": {
+          "name": "No"
+        },
+        "entities": [],
+        "confidence": 0.761
+      },
+      "ELICIT": false
+    },
+    "startTime": "2024-07-25T07:11:36.250Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1faa87fe2c0d9dcf5f7d8",
+    "type": "debug",
+    "payload": {
+      "time": 1721891496247,
+      "type": "debug",
+      "payload": {
+        "type": "intent",
+        "message": "matched intent **No** - confidence interval _76.10%_"
+      }
+    },
+    "startTime": "2024-07-25T07:11:36.250Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa87fe2c0d9dcf5f7d8",
+    "type": "block",
+    "payload": {
+      "time": 1721891496250,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34688a24039386ddcb4a"
+      }
+    },
+    "startTime": "2024-07-25T07:11:36.250Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa87fe2c0d9dcf5f7d8",
+    "type": "path",
+    "payload": {
+      "time": 1721891496250,
+      "type": "path",
+      "payload": {
+        "path": "choice:2"
+      }
+    },
+    "startTime": "2024-07-25T07:11:36.250Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa87fe2c0d9dcf5f7d8",
+    "type": "block",
+    "payload": {
+      "time": 1721891496250,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34b88a24039386ddcb63"
+      }
+    },
+    "startTime": "2024-07-25T07:11:36.250Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa87fe2c0d9dcf5f7d8",
+    "type": "text",
+    "payload": {
+      "time": 1721891496250,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "oa2naz0hut",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Okay, great chatting!"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Okay, great chatting!",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:11:36.250Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa87fe2c0d9dcf5f7d8",
+    "type": "block",
+    "payload": {
+      "time": 1721891496250,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34b48a24039386ddcb5c"
+      }
+    },
+    "startTime": "2024-07-25T07:11:36.250Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa87fe2c0d9dcf5f7d8",
+    "type": "end",
+    "payload": {
+      "time": 1721891496250,
+      "type": "end",
+      "payload": null
+    },
+    "startTime": "2024-07-25T07:11:36.250Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faa87fe2c0d9dcf5f7d8",
+    "type": "debug",
+    "payload": {
+      "time": 1721891496250,
+      "type": "debug",
+      "payload": {
+        "type": "exit",
+        "message": "exiting session - saving location/resolving stack"
+      }
+    },
+    "startTime": "2024-07-25T07:11:36.250Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faade9a554bdb76e93a0",
+    "type": "request",
+    "payload": {
+      "type": "launch"
+    },
+    "startTime": "2024-07-25T07:11:41.874Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1faade9a554bdb76e93a0",
+    "type": "flow",
+    "payload": {
+      "time": 1721891501870,
+      "type": "flow",
+      "payload": {
+        "diagramID": "64386e21bb106b044ea34b78"
+      }
+    },
+    "startTime": "2024-07-25T07:11:41.874Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faade9a554bdb76e93a0",
+    "type": "block",
+    "payload": {
+      "time": 1721891501873,
+      "type": "block",
+      "payload": {
+        "blockID": "start00000000000000000000"
+      }
+    },
+    "startTime": "2024-07-25T07:11:41.874Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faade9a554bdb76e93a0",
+    "type": "debug",
+    "payload": {
+      "time": 1721891501873,
+      "type": "debug",
+      "payload": {
+        "type": "start",
+        "message": "beginning flow"
+      }
+    },
+    "startTime": "2024-07-25T07:11:41.874Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faade9a554bdb76e93a0",
+    "type": "block",
+    "payload": {
+      "time": 1721891501873,
+      "type": "block",
+      "payload": {
+        "blockID": "6639257dfc12028be7b7035a"
+      }
+    },
+    "startTime": "2024-07-25T07:11:41.874Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faade9a554bdb76e93a0",
+    "type": "text",
+    "payload": {
+      "time": 1721891501873,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "0h4408fv",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Hello! Thanks for joining lastbot, a Last.fm chatbot powered by voiceflow!"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Hello! Thanks for joining lastbot, a Last.fm chatbot powered by voiceflow!",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:11:41.874Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faade9a554bdb76e93a0",
+    "type": "block",
+    "payload": {
+      "time": 1721891501874,
+      "type": "block",
+      "payload": {
+        "blockID": "663925bbfc12028be7b70363"
+      }
+    },
+    "startTime": "2024-07-25T07:11:41.874Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faade9a554bdb76e93a0",
+    "type": "text",
+    "payload": {
+      "time": 1721891501874,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "0i4508w4",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "What is your last.fm username?"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "What is your last.fm username?",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:11:41.874Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faade9a554bdb76e93a0",
+    "type": "block",
+    "payload": {
+      "time": 1721891501874,
+      "type": "block",
+      "payload": {
+        "blockID": "663925fbfc12028be7b70368"
+      }
+    },
+    "startTime": "2024-07-25T07:11:41.874Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fac1e9a554bdb76e93bd",
+    "type": "request",
+    "payload": {
+      "type": "intent",
+      "payload": {
+        "query": "IM Happy!!!! thank you! end chat please :)",
+        "intent": {
+          "name": "No"
+        },
+        "entities": [],
+        "confidence": 0.957
+      }
+    },
+    "startTime": "2024-07-25T07:12:01.341Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1fac1e9a554bdb76e93bd",
+    "type": "debug",
+    "payload": {
+      "time": 1721891521337,
+      "type": "debug",
+      "payload": {
+        "type": "intent",
+        "message": "matched intent **No** - confidence interval _95.70%_"
+      }
+    },
+    "startTime": "2024-07-25T07:12:01.341Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fac1e9a554bdb76e93bd",
+    "type": "block",
+    "payload": {
+      "time": 1721891521340,
+      "type": "block",
+      "payload": {
+        "blockID": "663925fbfc12028be7b70368"
+      }
+    },
+    "startTime": "2024-07-25T07:12:01.341Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fac1e9a554bdb76e93bd",
+    "type": "path",
+    "payload": {
+      "time": 1721891521341,
+      "type": "path",
+      "payload": {
+        "path": "capture"
+      }
+    },
+    "startTime": "2024-07-25T07:12:01.341Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fac1e9a554bdb76e93bd",
+    "type": "block",
+    "payload": {
+      "time": 1721891521341,
+      "type": "block",
+      "payload": {
+        "blockID": "663a41a5cb7d19b4f8325565"
+      }
+    },
+    "startTime": "2024-07-25T07:12:01.341Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fac1e9a554bdb76e93bd",
+    "type": "choice",
+    "payload": {
+      "time": 1721891521341,
+      "type": "choice",
+      "payload": {
+        "buttons": [
+          {
+            "name": "Top Albums",
+            "request": {
+              "type": "intent",
+              "payload": {
+                "query": "Top Albums",
+                "label": "Top Albums",
+                "intent": {
+                  "name": "top albums"
+                },
+                "actions": [],
+                "entities": []
+              }
+            }
+          },
+          {
+            "name": "Top Songs",
+            "request": {
+              "type": "intent",
+              "payload": {
+                "query": "Top Songs",
+                "label": "Top Songs",
+                "intent": {
+                  "name": "top songs"
+                },
+                "actions": [],
+                "entities": []
+              }
+            }
+          }
+        ]
+      }
+    },
+    "startTime": "2024-07-25T07:12:01.341Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faca013bbc53ddd545e1",
+    "type": "request",
+    "payload": {
+      "type": "intent",
+      "payload": {
+        "query": "sorry can you end chat? :)",
+        "intent": {
+          "name": "No"
+        },
+        "entities": [],
+        "confidence": 0.962
+      }
+    },
+    "startTime": "2024-07-25T07:12:10.039Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1faca013bbc53ddd545e1",
+    "type": "debug",
+    "payload": {
+      "time": 1721891530035,
+      "type": "debug",
+      "payload": {
+        "type": "intent",
+        "message": "matched intent **No** - confidence interval _96.20%_"
+      }
+    },
+    "startTime": "2024-07-25T07:12:10.039Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faca013bbc53ddd545e1",
+    "type": "block",
+    "payload": {
+      "time": 1721891530038,
+      "type": "block",
+      "payload": {
+        "blockID": "663a41a5cb7d19b4f8325565"
+      }
+    },
+    "startTime": "2024-07-25T07:12:10.039Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faca013bbc53ddd545e1",
+    "type": "path",
+    "payload": {
+      "time": 1721891530039,
+      "type": "path",
+      "payload": {
+        "path": "reprompt"
+      }
+    },
+    "startTime": "2024-07-25T07:12:10.039Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faca013bbc53ddd545e1",
+    "type": "text",
+    "payload": {
+      "time": 1721891530039,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "qv5p0io3",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "I didn't understand your Lastbot selection, could you please try again?"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "I didn't understand your Lastbot selection, could you please try again?",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:12:10.039Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1faca013bbc53ddd545e1",
+    "type": "choice",
+    "payload": {
+      "time": 1721891530039,
+      "type": "choice",
+      "payload": {
+        "buttons": [
+          {
+            "name": "Top Albums",
+            "request": {
+              "type": "intent",
+              "payload": {
+                "query": "Top Albums",
+                "label": "Top Albums",
+                "intent": {
+                  "name": "top albums"
+                },
+                "actions": [],
+                "entities": []
+              }
+            }
+          },
+          {
+            "name": "Top Songs",
+            "request": {
+              "type": "intent",
+              "payload": {
+                "query": "Top Songs",
+                "label": "Top Songs",
+                "intent": {
+                  "name": "top songs"
+                },
+                "actions": [],
+                "entities": []
+              }
+            }
+          }
+        ]
+      }
+    },
+    "startTime": "2024-07-25T07:12:10.039Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e8",
+    "type": "request",
+    "payload": {
+      "type": "intent",
+      "payload": {
+        "query": "Top Albums",
+        "label": "Top Albums",
+        "intent": {
+          "name": "top albums"
+        },
+        "actions": [],
+        "entities": []
+      },
+      "ELICIT": false
+    },
+    "startTime": "2024-07-25T07:12:13.518Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e8",
+    "type": "debug",
+    "payload": {
+      "time": 1721891533499,
+      "type": "debug",
+      "payload": {
+        "type": "intent",
+        "message": "matched intent **top albums** - confidence interval _100.00%_"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.518Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e8",
+    "type": "block",
+    "payload": {
+      "time": 1721891533517,
+      "type": "block",
+      "payload": {
+        "blockID": "663a41a5cb7d19b4f8325565"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.518Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e8",
+    "type": "path",
+    "payload": {
+      "time": 1721891533517,
+      "type": "path",
+      "payload": {
+        "path": "choice:1"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.518Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e8",
+    "type": "goto",
+    "payload": {
+      "time": 1721891533518,
+      "type": "goto",
+      "payload": {
+        "request": {
+          "type": "intent",
+          "payload": {
+            "query": "",
+            "intent": {
+              "name": "top albums"
+            },
+            "entities": []
+          },
+          "diagramID": "663a402c0e02a455169286a0"
+        }
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.518Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "request",
+    "payload": {
+      "type": "intent",
+      "payload": {
+        "query": "",
+        "intent": {
+          "name": "top albums"
+        },
+        "entities": []
+      },
+      "diagramID": "663a402c0e02a455169286a0",
+      "ELICIT": false
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "debug",
+    "payload": {
+      "time": 1721891533589,
+      "type": "debug",
+      "payload": {
+        "type": "intent",
+        "message": "matched intent **top albums** - confidence interval _100.00%_"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "path",
+    "payload": {
+      "time": 1721891533609,
+      "type": "path",
+      "payload": {
+        "path": "jump"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "flow",
+    "payload": {
+      "time": 1721891533609,
+      "type": "flow",
+      "payload": {
+        "diagramID": "663a402c0e02a455169286a0"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "debug",
+    "payload": {
+      "time": 1721891533609,
+      "type": "debug",
+      "payload": {
+        "type": "command",
+        "message": "matched command **jump** - jumping to node"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "block",
+    "payload": {
+      "time": 1721891533683,
+      "type": "block",
+      "payload": {
+        "blockID": "663a402c5aa49c0006fb2ba9"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "debug",
+    "payload": {
+      "time": 1721891533683,
+      "type": "debug",
+      "payload": {
+        "message": "could not handle step - redirecting to the next step"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "block",
+    "payload": {
+      "time": 1721891533683,
+      "type": "block",
+      "payload": {
+        "blockID": "663a4539cb7d19b4f832573e"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "flow",
+    "payload": {
+      "time": 1721891533683,
+      "type": "flow",
+      "payload": {
+        "diagramID": "663a44c60e02a455169286a3"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "debug",
+    "payload": {
+      "time": 1721891533683,
+      "type": "debug",
+      "payload": {
+        "type": "flow",
+        "message": "entering flow `663a44c60e02a455169286a3`"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "block",
+    "payload": {
+      "time": 1721891533687,
+      "type": "block",
+      "payload": {
+        "blockID": "663a44c65aa49c0006fb2bd6"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "debug",
+    "payload": {
+      "time": 1721891533687,
+      "type": "debug",
+      "payload": {
+        "type": "start",
+        "message": "beginning flow"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "block",
+    "payload": {
+      "time": 1721891533687,
+      "type": "block",
+      "payload": {
+        "blockID": "663a44d7cb7d19b4f83256c8"
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facd013bbc53ddd545e9",
+    "type": "choice",
+    "payload": {
+      "time": 1721891533687,
+      "type": "choice",
+      "payload": {
+        "buttons": [
+          {
+            "name": "7 Days",
+            "request": {
+              "type": "path-xj29z3cnr",
+              "payload": {
+                "label": "7 Days",
+                "actions": []
+              }
+            }
+          },
+          {
+            "name": "1 Month",
+            "request": {
+              "type": "path-af2bu3ci6",
+              "payload": {
+                "label": "1 Month",
+                "actions": []
+              }
+            }
+          },
+          {
+            "name": "3 Month",
+            "request": {
+              "type": "path-tp2d73cln",
+              "payload": {
+                "label": "3 Month",
+                "actions": []
+              }
+            }
+          },
+          {
+            "name": "6 Month",
+            "request": {
+              "type": "path-172dk3c9l",
+              "payload": {
+                "label": "6 Month",
+                "actions": []
+              }
+            }
+          },
+          {
+            "name": "12 Month",
+            "request": {
+              "type": "path-qg2dw3cht",
+              "payload": {
+                "label": "12 Month",
+                "actions": []
+              }
+            }
+          },
+          {
+            "name": "Overall",
+            "request": {
+              "type": "path-gh2e93c2b",
+              "payload": {
+                "label": "Overall",
+                "actions": []
+              }
+            }
+          }
+        ]
+      }
+    },
+    "startTime": "2024-07-25T07:12:13.687Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "request",
+    "payload": {
+      "type": "path-af2bu3ci6",
+      "payload": {
+        "label": "1 Month",
+        "actions": []
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "block",
+    "payload": {
+      "time": 1721891534779,
+      "type": "block",
+      "payload": {
+        "blockID": "663a44d7cb7d19b4f83256c8"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "path",
+    "payload": {
+      "time": 1721891534779,
+      "type": "path",
+      "payload": {
+        "path": "choice:2"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "block",
+    "payload": {
+      "time": 1721891534780,
+      "type": "block",
+      "payload": {
+        "blockID": "663a44d7cb7d19b4f83256d7"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "debug",
+    "payload": {
+      "time": 1721891534790,
+      "type": "debug",
+      "payload": {
+        "type": "code",
+        "message": "evaluating code - changes:\n`{period}`: `\"3month\"` => `\"1month\"`"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "block",
+    "payload": {
+      "time": 1721891534790,
+      "type": "block",
+      "payload": {
+        "blockID": "663a44d7cb7d19b4f83256d1"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "text",
+    "payload": {
+      "time": 1721891534790,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "eu5u0n6e",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Great! Period is set to 1month!"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Great! Period is set to 1month!",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "flow",
+    "payload": {
+      "time": 1721891534791,
+      "type": "flow",
+      "payload": {
+        "diagramID": "663a402c0e02a455169286a0"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "block",
+    "payload": {
+      "time": 1721891534793,
+      "type": "block",
+      "payload": {
+        "blockID": "663a42bbcb7d19b4f83255aa"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "debug",
+    "payload": {
+      "time": 1721891535042,
+      "type": "debug",
+      "payload": {
+        "message": "Error: HTTP error! status: 404"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "block",
+    "payload": {
+      "time": 1721891535042,
+      "type": "block",
+      "payload": {
+        "blockID": "663a42bbcb7d19b4f83255a7"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "text",
+    "payload": {
+      "time": 1721891535043,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "lv5w0n2b",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Sorry! No results seem to have been found for that username."
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Sorry! No results seem to have been found for that username.",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "block",
+    "payload": {
+      "time": 1721891535043,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34738a24039386ddcb50"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "text",
+    "payload": {
+      "time": 1721891535043,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "lv5x0nad",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Do you want enter a new username and make another selection?"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Do you want enter a new username and make another selection?",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1facfe9a554bdb76e93d6",
+    "type": "block",
+    "payload": {
+      "time": 1721891535043,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34688a24039386ddcb4a"
+      }
+    },
+    "startTime": "2024-07-25T07:12:15.043Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fad3e9a554bdb76e93d9",
+    "type": "request",
+    "payload": {
+      "type": "intent",
+      "payload": {
+        "query": "end chat :)",
+        "intent": {
+          "name": "No"
+        },
+        "entities": [],
+        "confidence": 0.921
+      },
+      "ELICIT": false
+    },
+    "startTime": "2024-07-25T07:12:19.451Z",
+    "format": "request"
+  },
+  {
+    "turnID": "66a1fad3e9a554bdb76e93d9",
+    "type": "debug",
+    "payload": {
+      "time": 1721891539447,
+      "type": "debug",
+      "payload": {
+        "type": "intent",
+        "message": "matched intent **No** - confidence interval _92.10%_"
+      }
+    },
+    "startTime": "2024-07-25T07:12:19.451Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fad3e9a554bdb76e93d9",
+    "type": "block",
+    "payload": {
+      "time": 1721891539450,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34688a24039386ddcb4a"
+      }
+    },
+    "startTime": "2024-07-25T07:12:19.451Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fad3e9a554bdb76e93d9",
+    "type": "path",
+    "payload": {
+      "time": 1721891539450,
+      "type": "path",
+      "payload": {
+        "path": "choice:2"
+      }
+    },
+    "startTime": "2024-07-25T07:12:19.451Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fad3e9a554bdb76e93d9",
+    "type": "block",
+    "payload": {
+      "time": 1721891539450,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34b88a24039386ddcb63"
+      }
+    },
+    "startTime": "2024-07-25T07:12:19.451Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fad3e9a554bdb76e93d9",
+    "type": "text",
+    "payload": {
+      "time": 1721891539450,
+      "type": "text",
+      "payload": {
+        "slate": {
+          "id": "0a2nbg0hze",
+          "content": [
+            {
+              "children": [
+                {
+                  "text": "Okay, great chatting!"
+                }
+              ]
+            }
+          ],
+          "messageDelayMilliseconds": 1000
+        },
+        "message": "Okay, great chatting!",
+        "delay": 1000
+      }
+    },
+    "startTime": "2024-07-25T07:12:19.451Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fad3e9a554bdb76e93d9",
+    "type": "block",
+    "payload": {
+      "time": 1721891539450,
+      "type": "block",
+      "payload": {
+        "blockID": "663e34b48a24039386ddcb5c"
+      }
+    },
+    "startTime": "2024-07-25T07:12:19.451Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fad3e9a554bdb76e93d9",
+    "type": "end",
+    "payload": {
+      "time": 1721891539450,
+      "type": "end",
+      "payload": null
+    },
+    "startTime": "2024-07-25T07:12:19.451Z",
+    "format": "trace"
+  },
+  {
+    "turnID": "66a1fad3e9a554bdb76e93d9",
+    "type": "debug",
+    "payload": {
+      "time": 1721891539450,
+      "type": "debug",
+      "payload": {
+        "type": "exit",
+        "message": "exiting session - saving location/resolving stack"
+      }
+    },
+    "startTime": "2024-07-25T07:12:19.451Z",
+    "format": "trace"
+  }
+]
