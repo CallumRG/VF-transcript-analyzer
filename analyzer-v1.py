@@ -1,4 +1,5 @@
 from datetime import datetime
+import random
 import pytz
 import requests
 from openai import OpenAI
@@ -55,26 +56,49 @@ class Session:
         self.vf_transcript_dialog_session_markdown = f"# {title.upper()} Report type\n\n" + markdown
         self.session_date = formatted_date
 
-    def analyze_satisfaction(self, test_mode = False):
+    def analyze_satisfaction(self, test_mode=False):
         if not test_mode:
-            response = client.chat.completions.create(
-                model="gpt-4o-mini",
-                messages=[
-                    {"role": "system", "content": "You are a helpful assistant."},
-                    {"role": "user", "content": f"Analyze the satisfaction of the following text log for the user and provide a score of 0 for (Bad Satisfaction) or 1 for (Positive Satisfaction). A neutral satisfaction should be skewed towards giving 1 for (Positive Satisfaction). Only return 0 or 1, no other characters: {self.vf_transcript_dialog_session_markdown}"}
-                ]
+            # Improved system and user prompts for clarity and better guidance
+            system_message = (
+                "You are an AI trained to analyze customer satisfaction based on text logs. "
+                "Your task is to evaluate the user's satisfaction from the provided conversation log. The satisfaction can still be positive even if the chatbot isn't understanding, as long as the customer is happy or got good results."
             )
-            print(response.usage)
-            sentiment = response.choices[0].message.content.strip()
 
-            if sentiment == "0":
-                self.rating = "Negative"
-            elif sentiment == "1":
-                self.rating = "Positive"
-            else:
+            user_message = (
+                f"Please analyze the following text log to determine the user satisfaction. This is the interaction result for the customer, so if the customer is happy and the chatbot doesn't understand that is still positive."
+                f"Assign a score of 0 if the satisfaction is poor (bad experience) or 1 if it is good (positive experience). "
+                f"Respond with only '0' or '1', and ensure your answer is clearly in one of these two formats. "
+                f"Here is the conversation log:\n\n{self.vf_transcript_dialog_session_markdown}"
+            )
+
+            try:
+                response = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[
+                        {"role": "system", "content": system_message},
+                        {"role": "user", "content": user_message}
+                    ]
+                )
+                print(response.usage)
+                sentiment = response.choices[0].message.content.strip()
+
+                # Ensure the sentiment is either '0' or '1'
+                if sentiment == "0":
+                    self.rating = "Negative"
+                elif sentiment == "1":
+                    self.rating = "Positive"
+                else:
+                    print(f"Unexpected response: {sentiment}")
+                    self.rating = "Exclude"
+
+            except Exception as e:
+                print(f"Error in sentiment analysis: {e}")
                 self.rating = "Exclude"
+
         else:
+            # For test mode, set the rating to "Exclude"
             self.rating = "Exclude"
+
 
 class Transcript:
     def __init__(self, vf_transcript_info):
@@ -117,11 +141,12 @@ class Transcript:
             self.vf_sessions.append(Session(current_chunk, self.vf_transcript_info['_id'] + "-" + str(count)))
 
 class ProjectTranscripts:
-    def __init__(self, vf_api_key, vf_project_id, time_range="Today", tag=None):
+    def __init__(self, vf_api_key, vf_project_id, time_range="Today", tag=None, random = 0):
         self.vf_api_key = vf_api_key
         self.vf_project_id = vf_project_id
         self.time_range = time_range
         self.tag = tag
+        self.random = random
 
         self.transcripts = []
 
@@ -143,8 +168,12 @@ class ProjectTranscripts:
             transcripts = response.json()
 
             if transcripts:
+                if self.random > 0 and self.random < len(transcripts):
+                    transcripts = random.sample(transcripts, self.random)
+                    
                 for transcript in transcripts:
                     self.transcripts.append(Transcript(transcript))
+
             else:
                 print('No transcripts found.')
                 return None
@@ -170,8 +199,10 @@ def fetch_and_analyze():
     project_id = project_id_entry.get()
     time_range = time_range_combo.get()
     tag = tag_entry.get()
+    random_sample_size = int(random_sample_entry.get() or 0)  # Default to 0 if empty
 
-    project_transcripts = ProjectTranscripts(api_key, project_id, time_range=time_range, tag=tag)
+
+    project_transcripts = ProjectTranscripts(api_key, project_id, time_range=time_range, tag=tag, random=random_sample_size)
     project_transcripts.fetch_transcripts()
 
     rows = []
@@ -187,7 +218,7 @@ def fetch_and_analyze():
     for row in rows:
         tree.insert("", tk.END, values=row)
 
-    average_csat_button.grid(row=5, column=2, sticky=tk.E, padx=10, pady=10)  # Make the CSAT button visible after fetching
+    average_csat_button.grid(row=6, column=2, sticky=tk.E, padx=10, pady=10)  # Make the CSAT button visible after fetching
 
 def on_double_click(event):
     item = tree.selection()[0]
@@ -268,23 +299,29 @@ project_id_entry.insert(0, default_project_id)
 # Time Range
 time_range_label = ttk.Label(mainframe, text="Time Range:")
 time_range_label.grid(row=3, column=1, sticky=tk.W)
-time_range_combo = ttk.Combobox(mainframe, values=["Today", "Yesterday", "Last 7 Days", "Last 30 Days", "All Time"])
+time_range_combo = ttk.Combobox(mainframe, values=["Today", "Yesterday", "Last 7 Days", "Last 30 days", "All time"])
 time_range_combo.grid(row=3, column=2, sticky=(tk.W, tk.E))
 time_range_combo.set("Today")
 
+# Random Sample Size
+random_sample_label = ttk.Label(mainframe, text="Random Sample Size (0 for all):")
+random_sample_label.grid(row=4, column=1, sticky=tk.W)
+random_sample_entry = ttk.Entry(mainframe, width=50)
+random_sample_entry.grid(row=4, column=2, sticky=(tk.W, tk.E))
+
 # Tag
 tag_label = ttk.Label(mainframe, text="Tag (optional):")
-tag_label.grid(row=4, column=1, sticky=tk.W)
+tag_label.grid(row=5, column=1, sticky=tk.W)
 tag_entry = ttk.Entry(mainframe, width=50)
-tag_entry.grid(row=4, column=2, sticky=(tk.W, tk.E))
+tag_entry.grid(row=5, column=2, sticky=(tk.W, tk.E))
 
 # Fetch and Analyze Button
 fetch_analyze_button = ttk.Button(mainframe, text="Fetch and Analyze", command=fetch_and_analyze)
-fetch_analyze_button.grid(row=5, column=1, sticky=tk.W, pady=10)
+fetch_analyze_button.grid(row=6, column=1, sticky=tk.W, pady=10)
 
 # Button to Calculate Average CSAT
 average_csat_button = ttk.Button(mainframe, text="Calculate Average CSAT", command=calculate_average_csat)
-average_csat_button.grid(row=5, column=2, sticky=tk.E, padx=10, pady=10)
+average_csat_button.grid(row=6, column=2, sticky=tk.E, padx=10, pady=10)
 average_csat_button.grid_forget()  # Hide initially
 
 # Treeview for results
@@ -297,14 +334,14 @@ tree.column("markdown", width=0, stretch=tk.NO)
 tree.bind("<Double-1>", on_double_click)
 tree.bind("<<TreeviewSelect>>", on_treeview_select)
 
-tree.grid(row=6, column=1, columnspan=2, sticky=(tk.W, tk.E, tk.N, tk.S))
+tree.grid(row=7, column=1, columnspan=2, sticky=(tk.W, tk.E, tk.N, tk.S))
 
 # Scrollbars for treeview
 scrollbar_y = ttk.Scrollbar(mainframe, orient=tk.VERTICAL, command=tree.yview)
-scrollbar_y.grid(row=6, column=3, sticky=(tk.N, tk.S))
+scrollbar_y.grid(row=7, column=3, sticky=(tk.N, tk.S))
 
 scrollbar_x = ttk.Scrollbar(mainframe, orient=tk.HORIZONTAL, command=tree.xview)
-scrollbar_x.grid(row=7, column=1, columnspan=2, sticky=(tk.W, tk.E))
+scrollbar_x.grid(row=8, column=1, columnspan=2, sticky=(tk.W, tk.E))
 
 tree.configure(yscrollcommand=scrollbar_y.set, xscrollcommand=scrollbar_x.set)
 
@@ -312,10 +349,10 @@ tree.configure(yscrollcommand=scrollbar_y.set, xscrollcommand=scrollbar_x.set)
 rating_var = StringVar()
 
 rating_label = ttk.Label(mainframe, text="Change Rating:")
-rating_label.grid(row=8, column=1, sticky=tk.W, pady=10)
+rating_label.grid(row=9, column=1, sticky=tk.W, pady=10)
 
 rating_combobox = ttk.Combobox(mainframe, textvariable=rating_var, values=["Positive", "Negative", "Exclude"])
-rating_combobox.grid(row=8, column=2, sticky=(tk.W, tk.E), pady=10)
+rating_combobox.grid(row=9, column=2, sticky=(tk.W, tk.E), pady=10)
 
 rating_combobox.bind("<<ComboboxSelected>>", on_combobox_select)
 
