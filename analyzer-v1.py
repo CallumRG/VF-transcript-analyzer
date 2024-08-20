@@ -60,8 +60,8 @@ class Session:
         if not test_mode:
             # Improved system and user prompts for clarity and better guidance
             system_message = (
-                "You are an AI trained to analyze customer satisfaction based on text logs. "
-                "Your task is to evaluate the user's satisfaction from the provided conversation log. The satisfaction can still be positive even if the chatbot isn't understanding, as long as the customer is happy or got good results."
+                "You are an AI trained to analyze customer satisfaction based on text logs."
+                "Your task is to evaluate the user's satisfaction from the provided conversation log."
             )
 
             user_message = (
